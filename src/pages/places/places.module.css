@@ -1,0 +1,119 @@
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header {
+    background-color: #006400;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .main {
+    padding: 2rem;
+  }
+  
+  .pageTitle {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .card {
+    background-color: #f0f8f5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .placeName {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .placePrice {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #006400;
+  }
+  
+  .placeDescription {
+    margin: 0.5rem 0;
+  }
+  
+  .placeAddress {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .rentButton {
+    margin-top: 1rem;
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .rentButton:hover {
+    background-color: #004d00;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .pageButton {
+    margin: 0 0.2rem;
+    background-color: #f0f8f5;
+    border: 1px solid #006400;
+    color: #006400;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .pageButton:hover {
+    background-color: #006400;
+    color: white;
+  }
+  
+  .pageButton.active {
+    background-color: #006400;
+    color: white;
+  }
+  

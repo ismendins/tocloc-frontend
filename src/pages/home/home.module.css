@@ -1,0 +1,112 @@
+/* Home.module.css */
+
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header styling */
+  .header {
+    background-color: #004d40; /* Dark green */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    padding: 40px;
+    font-size: 20px;
+    color: #004d40;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  /* Slide text styling */
+  .slide p {
+    margin: 0;
+  }
+  
+  /* Pagination dots */
+  .dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .dots span {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    display: inline-block;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dots .active-dot {
+    background-color: #004d40;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .slideshow-container {
+      padding: 20px;
+    }
+  
+    .slide {
+      font-size: 18px;
+    }
+  }
+  
